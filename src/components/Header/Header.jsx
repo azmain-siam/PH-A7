@@ -2,7 +2,7 @@ import icon from "../../assets/Photos/Vector.svg";
 
 const Header = () => {
   return (
-    <header >
+    <header>
       <nav className="my-3">
         <div className="navbar bg-white">
           <div className="navbar-start">
@@ -76,11 +76,8 @@ const Header = () => {
             </ul>
           </div>
           <div className="navbar-end space-x-5">
-            <a className="hidden lg:flex" href="#">
-              <i className="fa-solid fa-magnifying-glass text-[#89898B] hover:text-main-color duration-300 text-lg"></i>
-            </a>
             <div className="flex gap-2">
-              <label className="input input-bordered flex items-center gap-2">
+              <label className="input input-bordered hidden lg:flex items-center gap-2">
                 <input type="text" className="grow" placeholder="Search" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
