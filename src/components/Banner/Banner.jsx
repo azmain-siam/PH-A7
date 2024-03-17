@@ -9,7 +9,7 @@ const Banner = () => {
             <h1 className="mb-5 text-4xl lg:text-5xl font-bold lg:w-[890px] mx-auto leading-tight text-white">
               Discover an exceptional cooking <br /> class tailored for you!
             </h1>
-            <p className="mb-5 max-w-[900px] font-normal text-base text-[#ffffffcc]">
+            <p className="mb-5 max-w-[900px] text-base text-[#ffffffcc]">
               Learn and Master Basic Programming, Data Structures, Algorithm,
               OOP, Database and solve 500+ coding problems to become an
               exceptionally well world-class Programmer.
