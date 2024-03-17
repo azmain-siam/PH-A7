@@ -11,8 +11,8 @@
       "2 cloves garlic, minced",
       "Salt and black pepper to taste"
     ],
-    "preparing_time": "20 min",
-    "calories": "450 calories",
+    "preparing_time": 20,
+    "calories": 450,
     "recipe_image": "https://myplate-prod.azureedge.us/sites/default/files/styles/large/public/2021-09/OnePanSpaghetti_527x323.jpg?itok=pvrcTQJ_"
   },
   {
@@ -27,8 +27,8 @@
       "2 tbsp olive oil",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "30 min",
-    "calories": "380 calories",
+    "preparing_time": 30,
+    "calories": 380,
     "recipe_image": "https://d2lswn7b0fl4u2.cloudfront.net/photos/pg-margherita-pizza-1611491820.jpg"
   },
   {
@@ -43,8 +43,8 @@
       "1 tsp dried thyme",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "1 hr 30 min",
-    "calories": "380 calories",
+    "preparing_time": 90,
+    "calories": 380,
     "recipe_image": "https://www.eatwell101.com/wp-content/uploads/2021/02/baked-chicken-thighs-recipe-5.jpg"
   },
   {
@@ -59,8 +59,8 @@
       "2 cloves garlic, minced",
       "2 tbsp vegetable oil"
     ],
-    "preparing_time": "25 min",
-    "calories": "320 calories",
+    "preparing_time": 25,
+    "calories": 320,
     "recipe_image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/12/fried-rice.jpg"
   },
   {
@@ -75,8 +75,8 @@
       "2 tbsp chopped fresh letus ",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "20 min",
-    "calories": "280 calories",
+    "preparing_time": 20,
+    "calories": 280,
     "recipe_image": "https://www.inspiredtaste.net/wp-content/uploads/2018/09/Easy-Oven-Baked-Salmon-Recipe-2-1200.jpg"
   },
   {
@@ -91,8 +91,8 @@
       "100 ml dry white wine",
       "50 g grated Parmesan cheese"
     ],
-    "preparing_time": "40 min",
-    "calories": "360 calories",
+    "preparing_time": 40,
+    "calories": 360,
     "recipe_image": "https://www.eatingwell.com/thmb/N_0xtwSPPGe7L1YA7O8Uhxm9LfA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MushroomRisotto-Beauty-2825-b89fc407ca374feb997e10db2854a2a7.jpg"
   }
 ]

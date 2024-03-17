@@ -36,11 +36,11 @@ const Recipe = ({ recipe, handleAdd }) => {
           <div className="flex items-center gap-5 mb-2 text-[#282828CC]">
             <div className="flex items-center gap-3">
               <i className="fa-regular fa-clock"></i>
-              <p>{preparing_time}</p>
+              <p>{preparing_time} Min</p>
             </div>
             <div className="flex items-center gap-3">
               <i className="fa-solid fa-fire-flame-curved"></i>
-              <p>{calories}</p>
+              <p>{calories} Calories</p>
             </div>
           </div>
           <div className="card-actions">

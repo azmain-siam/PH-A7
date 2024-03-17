@@ -3,14 +3,14 @@ import { useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
-import WantToCook from "./components/WantToCook/WantToCook";
 import OurRecipe from "./components/ourRecipe/OurRecipe";
 import { useEffect } from "react";
 import Recipe from "./components/Recipies/Recipe";
+import WantToCook from "./components/WantToCook/WantToCook";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
-  const [cook, setCook] = useState();
+  const [cook, setCook] = useState([]);
 
   useEffect(() => {
     fetch("./Data.json")
@@ -19,16 +19,20 @@ function App() {
   }, []);
 
   const handleAdd = (p) => {
-    setCook(p);
+    const isExist = cook.find((item) => item.recipe_id == p.recipe_id);
+    if (!isExist) {
+      setCook([...cook, p]);
+    }
   };
-  console.log(cook);
+  
+
   return (
     <div className="w-[90%] lg:w-11/12 max-w-7xl mx-auto">
       <Header></Header>
       <Banner></Banner>
       <OurRecipe></OurRecipe>
       <div className="flex gap-6">
-        <div className="grid grid-cols-2 gap-6 lg:w-[60%]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:w-[60%]">
           {recipes.map((recipe) => (
             <Recipe
               key={recipe.recipe_id}
@@ -37,7 +41,7 @@ function App() {
             ></Recipe>
           ))}
         </div>
-        <WantToCook items={cook}></WantToCook>
+        <WantToCook key={cook.recipe_id} items={cook}></WantToCook>
       </div>
     </div>
   );
