@@ -30,7 +30,7 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <OurRecipe></OurRecipe>
-      <div className="flex gap-6">
+      <div className="flex gap-6 lg:flex-row flex-col mb-14">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:w-[60%]">
           {recipes.map((recipe) => (
             <Recipe

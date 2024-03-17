@@ -1,5 +1,3 @@
-import icon from "../../assets/Photos/Vector.svg";
-
 const Header = () => {
   return (
     <header>
@@ -55,29 +53,29 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <h1 className="text-2xl lg:text-4xl font-extrabold cursor-default text-[#131318]">
-              Recipe
+            <h1 className="text-2xl lg:text-3xl font-bold  cursor-default text-[#131318]">
+              FlavorVerse
             </h1>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="flex gap-10 text-base font-medium text-dark-color">
-              <li className="hover:text-main-color cursor-pointer duration-300">
+              <li className="hover:text-[#40be8a] cursor-pointer duration-200">
                 <a>Home</a>
               </li>
-              <li className="hover:text-main-color cursor-pointer duration-300">
+              <li className="hover:text-[#40be8a] cursor-pointer duration-200">
                 <a>Recipes</a>
               </li>
-              <li className="hover:text-main-color cursor-pointer duration-300">
+              <li className="hover:text-[#40be8a] cursor-pointer duration-200">
                 <a>About</a>
               </li>
-              <li className="hover:text-main-color cursor-pointer duration-300">
+              <li className="hover:text-[#40be8a] cursor-pointer duration-200">
                 <a>Search</a>
               </li>
             </ul>
           </div>
           <div className="navbar-end space-x-5">
             <div className="flex gap-2">
-              <label className="input input-bordered hidden lg:flex items-center gap-2">
+              <label className="input input-bordered hidden rounded-full lg:flex items-center gap-2">
                 <input type="text" className="grow" placeholder="Search" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,8 +90,8 @@ const Header = () => {
                   />
                 </svg>
               </label>
-              <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                <img src={icon} alt="" />
+              <div className="md:w-12 w-10 md:h-12 h-10 bg-[#0BE58A] rounded-full cursor-pointer flex items-center justify-center">
+                <i className="fa-regular fa-user text-lg md:text-xl"></i>
               </div>
             </div>
           </div>
