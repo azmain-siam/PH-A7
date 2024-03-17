@@ -15,7 +15,7 @@ const WantToCook = ({ items, setCook }) => {
   };
 
   return (
-    <div className="border border-[#28282833] rounded-xl w-full lg:max-w-[41%] text-center">
+    <div className="border border-[#28282833] rounded-xl w-full lg:max-w-[41%] text-center pb-5">
       <div className="px-10">
         <h3 className="text-xl lg:text-2xl p-5 font-semibold text-[#282828]">
           Want to cook: {items.length}
