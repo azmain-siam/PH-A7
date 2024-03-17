@@ -7,10 +7,14 @@ import OurRecipe from "./components/ourRecipe/OurRecipe";
 import { useEffect } from "react";
 import Recipe from "./components/Recipies/Recipe";
 import WantToCook from "./components/WantToCook/WantToCook";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [cook, setCook] = useState([]);
+  const notify = () => toast.error("Already Exists!");
+  const notifySuccess = () => toast.success("Selected to cook!");
 
   useEffect(() => {
     fetch("./Data.json")
@@ -22,12 +26,16 @@ function App() {
     const isExist = cook.find((item) => item.recipe_id == p.recipe_id);
     if (!isExist) {
       setCook([...cook, p]);
+      notifySuccess();
+    } else {
+      notify();
     }
   };
 
   return (
     <div className="w-[90%] lg:w-11/12 max-w-7xl mx-auto">
       <Header></Header>
+      <ToastContainer />
       <Banner></Banner>
       <OurRecipe></OurRecipe>
       <div className="flex gap-6 lg:flex-row flex-col mb-14">
