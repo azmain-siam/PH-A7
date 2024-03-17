@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const WantToCook = ({ items }) => {
+const WantToCook = ({ items, setCook }) => {
   const [prepare, setPrepare] = useState([]);
   // console.log(items);
 
@@ -11,7 +11,7 @@ const WantToCook = ({ items }) => {
     }
 
     const newExist = items.filter((i) => i.recipe_id != p.recipe_id);
-    console.log(newExist);
+    setCook(newExist);
   };
 
   return (

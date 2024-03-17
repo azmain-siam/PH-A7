@@ -24,7 +24,6 @@ function App() {
       setCook([...cook, p]);
     }
   };
-  
 
   return (
     <div className="w-[90%] lg:w-11/12 max-w-7xl mx-auto">
@@ -41,7 +40,11 @@ function App() {
             ></Recipe>
           ))}
         </div>
-        <WantToCook key={cook.recipe_id} items={cook}></WantToCook>
+        <WantToCook
+          key={cook.recipe_id}
+          setCook={setCook}
+          items={cook}
+        ></WantToCook>
       </div>
     </div>
   );
