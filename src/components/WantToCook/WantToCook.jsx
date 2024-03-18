@@ -35,7 +35,10 @@ const WantToCook = ({ items, setCook }) => {
           </thead>
           <tbody>
             {items.map((i, index) => (
-              <tr className="bg-[#28282808] w-full p-0 *:p-1 lg:*:py-4 lg:*:px-3 text-[12px] lg:text-sm">
+              <tr
+                key={i.recipe_id}
+                className="bg-[#28282808] w-full p-0 *:p-1 lg:*:py-4 lg:*:px-3 text-[12px] lg:text-sm"
+              >
                 <th className="text-[#282828CC]">{index + 1}</th>
                 <td>{i.recipe_name}</td>
                 <td>{i.preparing_time} Minutes</td>
@@ -72,7 +75,7 @@ const WantToCook = ({ items, setCook }) => {
           </thead>
           <tbody>
             {prepare.map((i, index) => (
-              <tr className="bg-[#28282808] w-full">
+              <tr key={i.recipe_id} className="bg-[#28282808] w-full">
                 <th className="text-[#282828CC] pl-4">{index + 1}</th>
                 <td>{i.recipe_name}</td>
                 <td>{i.preparing_time} Minutes</td>
